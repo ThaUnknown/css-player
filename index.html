@@ -1,0 +1,34 @@
+<style>
+    body {
+        background: #111;
+    }
+
+    video.css-player:focus {
+        outline: none;
+    }
+
+    video.css-player::-webkit-media-controls-panel {
+        background: linear-gradient(to top, #111a 0, #1110 15%);
+    }
+
+    video.css-player.dark::-webkit-media-controls-panel {
+        background: linear-gradient(to top, #0005 0, #0000 15%);
+        filter: invert(1);
+    }
+
+    video.css-player::-webkit-media-controls-timeline {
+        padding-top: 20px;
+        padding-bottom: 0;
+        margin-bottom: -4px;
+    }
+
+    video.css-player::-webkit-media-controls-panel {
+        flex-direction: column-reverse;
+        justify-content: end;
+        margin-bottom: -4px;
+    }
+</style>
+<video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" muted controls
+    class="css-player dark"></video>
+<video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4#t=300" muted controls
+    class="css-player"></video>
